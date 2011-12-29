@@ -1,12 +1,20 @@
-<h1>Listing of Sheet Music</h1>
+<h1>Sheet Music</h1>
 
-<TABLE BORDER=1 BGCOLOR=#ffffff CELLSPACING=0 align=center>
+<TABLE BORDER=1 BGCOLOR=#ffffff CELLSPACING=1 cellpadding=5 align=center>
   <tr>
     <th>Title</th>
     <th>Composer/Arranger</th>
+    <th>Publisher</th>
+    <th>Period/Genre</th>
+    <th>Voicing</th>
     <th>Season</th>
-    <th>Choir</th>
-    <th>Copies</th>
+    <th>Liturgical Year</th>
+    <th>Language</th>
+    <th>Instrumentation</th>
+    <th>Usage</th>
+    <th>When/Who Performed</th>
+    <th>Number of Copies</th>
+    <th>Price per Copy</th>
     <th>Status</th>
     <th>Comments</th>
     <th></th>
@@ -18,9 +26,17 @@
   <tr>
     <td><%= sheet.Title %></td>
     <td><%= sheet.ComposerorArranger %></td>
+    <td><%= sheet.Publisher %></td>
+    <td><%= sheet.PeriodorGenre %></td>
+    <td><%= sheet.Voicing %></td>
     <td><%= sheet.Season %></td>
-    <td><%= sheet.Choir %></td>
-    <td><%= sheet.Copies %></td>
+    <td><%= sheet.LiturgicalYear %></td>
+    <td><%= sheet.Language %></td>
+    <td><%= sheet.Instrumentation %></td>
+    <td><%= sheet.Usage %></td>
+    <td><%= sheet.WhenorWhoPerformed %></td>
+    <td><%= sheet.NumofCopies %></td>
+    <td><%= sheet.PriceperCopy %></td>
     <td><%= sheet.Status %></td>
     <td><%= sheet.Comments %></td>
     <td><%= link_to 'Show', sheet %></td>
@@ -32,4 +48,5 @@
 
 <br />
 
-<%= link_to 'New Sheet', new_sheet_path %>
+<%= link_to 'New Sheet', new_sheet_path %><br>
+<%= link_to 'Home', root_path %>

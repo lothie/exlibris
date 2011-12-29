@@ -3,17 +3,33 @@
 one:
   Title: MyString
   ComposerorArranger: MyString
+  Publisher: MyString
+  PeriodorGenre: MyString
+  Voicing: MyString
   Season: MyString
-  Choir: MyString
-  Copies: MyString
+  LiturgicalYear: MyString
+  Language: MyString
+  Instrumentation: MyString
+  Usage: MyString
+  WhenorWhoPerformed: MyText
+  NumofCopies: 1
+  PriceperCopy: MyString
   Status: MyString
   Comments: MyText
 
 two:
   Title: MyString
   ComposerorArranger: MyString
+  Publisher: MyString
+  PeriodorGenre: MyString
+  Voicing: MyString
   Season: MyString
-  Choir: MyString
-  Copies: MyString
+  LiturgicalYear: MyString
+  Language: MyString
+  Instrumentation: MyString
+  Usage: MyString
+  WhenorWhoPerformed: MyText
+  NumofCopies: 1
+  PriceperCopy: MyString
   Status: MyString
   Comments: MyText

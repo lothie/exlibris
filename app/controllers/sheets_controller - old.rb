@@ -80,16 +80,4 @@ class SheetsController < ApplicationController
       format.json { head :ok }
     end
   end
-  
-  # FIND /sheets/1
-  # FIND /sheets/1.json
-  # Added 12/29/2011 by MUCH
-  def search
-    @sheet = Sheet.find(params[:id])
-	
-	 respond_to do |format|
-	    format.html # show.html.erb
-		format.json { render json: @sheet }
-     end
-  end
 end

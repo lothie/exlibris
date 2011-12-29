@@ -11,14 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111229063418) do
+ActiveRecord::Schema.define(:version => 20111229183331) do
 
   create_table "sheets", :force => true do |t|
     t.string   "Title"
     t.string   "ComposerorArranger"
+    t.string   "Publisher"
+    t.string   "PeriodorGenre"
+    t.string   "Voicing"
     t.string   "Season"
-    t.string   "Choir"
-    t.string   "Copies"
+    t.string   "LiturgicalYear"
+    t.string   "Language"
+    t.string   "Instrumentation"
+    t.string   "Usage"
+    t.text     "WhenorWhoPerformed"
+    t.integer  "NumofCopies"
+    t.string   "PriceperCopy"
     t.string   "Status"
     t.text     "Comments"
     t.datetime "created_at"
