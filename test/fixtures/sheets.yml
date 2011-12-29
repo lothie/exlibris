@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  ComposerorArranger: MyString
+  Season: MyString
+  Choir: MyString
+  Copies: MyString
+  Status: MyString
+  Comments: MyText
+
+two:
+  Title: MyString
+  ComposerorArranger: MyString
+  Season: MyString
+  Choir: MyString
+  Copies: MyString
+  Status: MyString
+  Comments: MyText

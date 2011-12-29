@@ -1,0 +1,35 @@
+<h1>Listing of Sheet Music</h1>
+
+<TABLE BORDER=1 BGCOLOR=#ffffff CELLSPACING=0 align=center>
+  <tr>
+    <th>Title</th>
+    <th>Composer/Arranger</th>
+    <th>Season</th>
+    <th>Choir</th>
+    <th>Copies</th>
+    <th>Status</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sheets.each do |sheet| %>
+  <tr>
+    <td><%= sheet.Title %></td>
+    <td><%= sheet.ComposerorArranger %></td>
+    <td><%= sheet.Season %></td>
+    <td><%= sheet.Choir %></td>
+    <td><%= sheet.Copies %></td>
+    <td><%= sheet.Status %></td>
+    <td><%= sheet.Comments %></td>
+    <td><%= link_to 'Show', sheet %></td>
+    <td><%= link_to 'Edit', edit_sheet_path(sheet) %></td>
+    <td><%= link_to 'Destroy', sheet, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sheet', new_sheet_path %>
