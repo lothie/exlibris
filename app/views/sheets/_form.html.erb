@@ -1,0 +1,81 @@
+<%= form_for(@sheet) do |f| %>
+  <% if @sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sheet.errors.count, "error") %> prohibited this sheet from being saved:</h2>
+
+      <ul>
+      <% @sheet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <!-- I edited some of the generated field labels to make them look nicer. --MUCH 12/29/2011 -->
+  
+  
+  <div class="field">
+    <%= f.label :Title %><br />
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <label for="sheet_ComposerorArranger">Composer/Arranger</label><br />
+    <%= f.text_field :ComposerorArranger %>
+  </div>
+  <div class="field">
+    <%= f.label :Publisher %><br />
+    <%= f.text_field :Publisher %>
+  </div>
+  <div class="field">
+    <label for="sheet_PeriodorGenre">Period/Genre</label><br />
+    <%= f.text_field :PeriodorGenre %>
+  </div>
+  <div class="field">
+    <%= f.label :Voicing %><br />
+    <%= f.text_field :Voicing %>
+  </div>
+  <div class="field">
+    <%= f.label :Season %><br />
+    <%= f.text_field :Season %>
+  </div>
+  <div class="field">
+    <label for="sheet_LiturgicalYear">Liturgical Year</label><br />
+    <%= f.text_field :LiturgicalYear %>
+  </div>
+  <div class="field">
+    <%= f.label :Language %><br />
+    <%= f.text_field :Language %>
+  </div>
+  <div class="field">
+    <%= f.label :Instrumentation %><br />
+    <%= f.text_field :Instrumentation %>
+  </div>
+  <div class="field">
+    <%= f.label :Usage %><br />
+    <%= f.text_field :Usage %>
+  </div>
+  <div class="field">
+    <label for="sheet_WhenorWhoPerformed">When or Who Performed</label><br />
+    <%= f.text_area :WhenorWhoPerformed %>
+  </div>
+  <div class="field">
+    <label for="sheet_NumofCopies">Number of Copies</label><br />
+    <%= f.number_field :NumofCopies %>
+  </div>
+  <div class="field">
+    <label for="sheet_PriceperCopy">Price per Copy</label><br />
+    <%= f.text_field :PriceperCopy %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Comments %><br />
+    <%= f.text_area :Comments %>
+  </div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Submit" />
+  </div>
+<% end %>

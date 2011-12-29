@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  ComposerorArranger: MyString
+  Publisher: MyString
+  PeriodorGenre: MyString
+  Voicing: MyString
+  Season: MyString
+  LiturgicalYear: MyString
+  Language: MyString
+  Instrumentation: MyString
+  Usage: MyString
+  WhenorWhoPerformed: MyText
+  NumofCopies: 1
+  PriceperCopy: MyString
+  Status: MyString
+  Comments: MyText
+
+two:
+  Title: MyString
+  ComposerorArranger: MyString
+  Publisher: MyString
+  PeriodorGenre: MyString
+  Voicing: MyString
+  Season: MyString
+  LiturgicalYear: MyString
+  Language: MyString
+  Instrumentation: MyString
+  Usage: MyString
+  WhenorWhoPerformed: MyText
+  NumofCopies: 1
+  PriceperCopy: MyString
+  Status: MyString
+  Comments: MyText
